@@ -85,7 +85,7 @@ double evaluate(node* argument) {
 		return argument->value;
 	}
 }
-/* Se evalueaaz in mod recursiv fiecare nod al arborelui*/
+/* Se evalueaza in mod recursiv fiecare nod al arborelui*/
 
 int main() {
 	p = expression;; //se pune pointerul la inceputul expresiei
@@ -94,7 +94,7 @@ int main() {
 	fin >> p;
 	expression[strlen(expression)] = '=';
 	tree = buildTree(0); //Se construieste arborele
-	fout << "Rezultatul expresiei este: " << evaluate(tree);/* se afiseaza valoare
+	fout << "Rezultatul expresiei este: " << evaluate(tree);/* se afiseaza valoarea
 															expresiei prin intermediul arborelui */
 	return 0;
 };
